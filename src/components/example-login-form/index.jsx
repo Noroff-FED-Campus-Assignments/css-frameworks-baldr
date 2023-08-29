@@ -13,9 +13,9 @@ function ExampleLoginForm() {
   });
 
   return (
-    <>
-    <Header />
     <div>
+      <>
+      <Header />
       {loginMutation.isLoading ? (
         <div>Loading...</div>
       ) : (
@@ -46,7 +46,7 @@ function ExampleLoginForm() {
               Summer styles are finally here
             </h1>
             <p className="mt-4 text-xl text-gray-500">
-              This year, our new summer collection will shelter you from the harsh elements of a world that doesn't care
+              This year, our new summer collection will shelter you from the harsh elements of a world that does not care
               if you live or die.
             </p>
           </div>
@@ -201,13 +201,11 @@ function ExampleLoginForm() {
           </p>
         </div>
       </div>
-    
-
-
-
+      </>
     </div>
-    </>
+
   );
 }
 
 export default ExampleLoginForm;
+
