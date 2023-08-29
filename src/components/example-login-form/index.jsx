@@ -1,6 +1,7 @@
 import { login } from "../../lib/my-api";
 import { useMutation } from "@tanstack/react-query";
 import { useNavigate } from "@tanstack/react-router";
+import Header from "../example-navbar";
 
 function ExampleLoginForm() {
   const navigate = useNavigate();
@@ -12,6 +13,8 @@ function ExampleLoginForm() {
   });
 
   return (
+    <>
+    <Header />
     <div>
       {loginMutation.isLoading ? (
         <div>Loading...</div>
@@ -130,8 +133,7 @@ function ExampleLoginForm() {
 
 
     </div>
-
-  
+    </>
   );
 }
 
