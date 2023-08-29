@@ -2,7 +2,6 @@ import { login } from "../../lib/my-api";
 import { useMutation } from "@tanstack/react-query";
 import { useNavigate } from "@tanstack/react-router";
 
-
 function ExampleLoginForm() {
   const navigate = useNavigate();
   const loginMutation = useMutation({
@@ -13,7 +12,6 @@ function ExampleLoginForm() {
   });
 
   return (
-    <>
     <div>
       {loginMutation.isLoading ? (
         <div>Loading...</div>
@@ -205,8 +203,8 @@ function ExampleLoginForm() {
 
 
     </div>
-    
-    </>
+
+  
   );
 }
 
