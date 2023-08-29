@@ -2,6 +2,7 @@ import { login } from "../../lib/my-api";
 import { useMutation } from "@tanstack/react-query";
 import { useNavigate } from "@tanstack/react-router";
 
+
 function ExampleLoginForm() {
   const navigate = useNavigate();
   const loginMutation = useMutation({
@@ -12,6 +13,7 @@ function ExampleLoginForm() {
   });
 
   return (
+    <>
     <div>
       {loginMutation.isLoading ? (
         <div>Loading...</div>
@@ -43,7 +45,7 @@ function ExampleLoginForm() {
               Summer styles are finally here
             </h1>
             <p className="mt-4 text-xl text-gray-500">
-              This year, our new summer collection will shelter you from the harsh elements of a world that doesn't care
+              This year, our new summer collection will shelter you from the harsh elements of a world that does not care
               if you live or die.
             </p>
           </div>
@@ -203,9 +205,10 @@ function ExampleLoginForm() {
 
 
     </div>
-
-  
+    
+    </>
   );
 }
 
 export default ExampleLoginForm;
+
