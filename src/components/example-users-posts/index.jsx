@@ -1,7 +1,22 @@
 import { useUsersPosts } from "../../lib/my-api";
 
+const listOfPosts = [
+  {
+    id: 1,
+    title: "Post 1",
+    userName: "Dog 1",
+    image: "/dog1.jpg"
+  },
+  {
+    id: 2,
+    title: "Post 2",
+    userName: "Dog 2",
+    image: "/dog2.jpg"
+  }
+];
+
 function ExampleUsersPosts() {
-  const userId = 2;
+  /*const userId = 2;
   const { status, error, data } = useUsersPosts(userId);
   const isLoading = status === "loading";
 
@@ -12,24 +27,17 @@ function ExampleUsersPosts() {
   if (error) {
     return <span>Error: {error.message}</span>;
   }
-
+*/
   return (
     <>
-      <section role="search"></section>
 
-      <article role="doc-introduction">
-        <h2>List</h2>
-
-        {data.posts.map((post) => (
+        {listOfPosts.map((post) => (
           <div key={post.id}>
             <h3>{post.title}</h3>
+            <h3>{post.userName}</h3>
+            <img src={post.image} alt={post.title} />
           </div>
         ))}
-      </article>
-
-      <section role="list">
-        <div id="js-list-container">_LOADING_INDICATOR_GOES_HERE_</div>
-      </section>
     </>
   );
 }
