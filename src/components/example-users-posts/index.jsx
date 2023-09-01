@@ -1,46 +1,22 @@
 import { useUsersPosts } from "../../lib/my-api";
-import React from 'react';
 
 const listOfPosts = [
 
   {
 
     id: 1,
-
-    profileImage: "/dog1.jpg",
-
-    userName: "Balder",
-
-    date: "10 minutes ago",
-
-    title: "Felt cute",
-
-    contentText: "lorem ipsuhuuuuhuuuuuum",
-
-    contentImage: "/dog1post.webp"
-
- 
-
+    title: "Post 1",
+    userName: "Dog 1",
+    image: "/dog1.jpg"
   },
 
   {
 
     id: 2,
-
-    profileImage: "/dog2.jpg",
-
-    userName: "Melissa",
-
-    date: "11 minutes ago",
-
-    title: "Just chillin'",
-
-    contentText: "My human gave me a spa day and now I feel refreshed",
-
-    contentImage: "/dog2post.jpg"
-
-  },
-
+    title: "Post 2",
+    userName: "Dog 2",
+    image: "/dog2.jpg"
+  }
 ];
 
 function ExampleUsersPosts() {
@@ -55,21 +31,20 @@ function ExampleUsersPosts() {
   if (error) {
     return <span>Error: {error.message}</span>;
   }
+
+import { useUsersPosts } from "../../lib/my-api";
+
 */
   return (
     <>
 
-{listOfPosts.map((post) => (
-  <div key={post.id} className="bg-white shadow-lg p-4 rounded-lg m-4">
-    <img src={post.profileImage} alt={post.userName} className="rounded-full h-10 w-10" />
-    <h3 className="text-xl font-semibold text-gray-800 mt-2">{post.userName}</h3>
-    <p className="text-gray-500">{post.date}</p>
-    <h3 className="text-2xl font-semibold text-gray-800 mt-2">{post.title}</h3>
-    <p className="text-gray-700">{post.contentText}</p>
-    <img src={post.contentImage} alt={post.title} className="mt-4 rounded-lg w-full" />
-  </div>
-))}
-
+        {listOfPosts.map((post) => (
+          <div key={post.id}>
+            <h3>{post.title}</h3>
+            <h3>{post.userName}</h3>
+            <img src={post.image} alt={post.title} />
+          </div>
+        ))}
     </>
   );
 }
