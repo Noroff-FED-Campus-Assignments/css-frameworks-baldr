@@ -1,8 +1,5 @@
 import { useUsersPosts } from "../../lib/my-api";
-
 import React from 'react';
-
- 
 
 const listOfPosts = [
   {
@@ -88,7 +85,6 @@ const listOfPosts = [
 ];
 
  
-
 function ExampleUsersPosts() {
 
   /*const userId = 2;
@@ -118,30 +114,26 @@ function ExampleUsersPosts() {
   return (
 
     <>
-
- 
-
+<div className="flex justify-center">
+  <div className="">
 {listOfPosts.map((post) => (
-
+  
   <div key={post.id} className="bg-white shadow-lg p-4 rounded-lg m-4">
-
-    <img src={post.profileImage} alt={post.userName} className="rounded-full h-10 w-10" />
-
-    <h3 className="text-xl font-semibold text-gray-800 mt-2">{post.userName}</h3>
-
-    <p className="text-gray-500">{post.date}</p>
-
-    <h3 className="text-2xl font-semibold text-gray-800 mt-2">{post.title}</h3>
-
+    <div className="flex flex-row gap-3">
+      <img src={post.profileImage} className="rounded-full h-10 w-10" />
+     <h3 className="text-xl font-semibold text-gray-800 mt-2">{post.userName}</h3>
+    </div>
+    <p className="text-gray-500 pt-2 pb-1">{post.date}</p>
     <p className="text-gray-700">{post.contentText}</p>
-
-    <img src={post.contentImage} alt={post.title} className="mt-4 rounded-lg w-full" />
-
+    <div className="flex justify-center">
+      <img src={post.contentImage} alt={post.title} className="mt-4 rounded-lg w-80" />
+    </div>
+    
   </div>
 
 ))}
-
- 
+</div>
+</div>
 
     </>
 
