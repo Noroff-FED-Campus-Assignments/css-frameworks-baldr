@@ -17,14 +17,14 @@ function ExampleLoginForm() {
         <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
           <div className="sm:max-w-lg">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Summer styles are finally here
+            Connect with your four-legged friends 🐶
             </h1>
             <p className="mt-4 text-xl text-gray-500">
-              This year, our new summer collection will shelter you from the harsh elements of a world that does not care if you live or die.
+            Welcome to dogSocial - your virtual world for connecting and sharing special moments with all your friends and family. Log in or join us today!
             </p>
           </div>
           <div className="mt-10 flex flex-wrap -mx-4">
-            {/* Images */}
+
             <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-6">
               <div className="h-64 overflow-hidden rounded-lg">
                 <img
@@ -43,7 +43,7 @@ function ExampleLoginForm() {
                 />
               </div>
             </div>
-            {/* Sign-in Form */}
+
             <div className="w-full sm:w-1/2 lg:w-1/2 px-4 mb-6 mt-6 sm:mt-0">
               <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
