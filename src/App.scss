@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: #4f46e5;
+}
+
+ul li:hover {
+  opacity: 0.8;
+  font-size: 110%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding-top: 20px;
+  color: #fff;
+}
+
+@media (min-width: 500px) {
+  nav {
+    font-size: 20px;
+  }
+}

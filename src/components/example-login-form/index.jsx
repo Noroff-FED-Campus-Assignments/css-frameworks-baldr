@@ -1,7 +1,6 @@
 import { login } from "../../lib/my-api";
 import { useMutation } from "@tanstack/react-query";
 import { useNavigate } from "@tanstack/react-router";
-import Header from "../example-navbar";
 
 function ExampleLoginForm() {
   const navigate = useNavigate();
@@ -15,7 +14,6 @@ function ExampleLoginForm() {
   return (
     <div>
       <>
-      <Header />
       {loginMutation.isLoading ? (
         <div>Loading...</div>
       ) : (
@@ -51,7 +49,7 @@ function ExampleLoginForm() {
       </div>
       <div>
         <div className="mt-10">
-          {/* Decorative image grid */}
+
           <div className="flex flex-wrap -mx-4">
             <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-6">
               <div className="h-64 overflow-hidden rounded-lg">
