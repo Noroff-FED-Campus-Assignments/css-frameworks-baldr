@@ -12,10 +12,11 @@ This project was bootstrapped with Vite.
 
 <!-- You must replace these links -->
 
-- [Brief](https://fed-vocational-astro-course.vercel.app/en/css-frameworks/ca/ca)
-- [Design](_LINK_TO_FIGMA_)
-- [Production deploy](_LINK_TO_WEBSITE_)
-- [Deployment CI](_LINK_TO_NETLIFY_VERCEL_DASHBOARD_)
+- [Brief](https://github.com/Noroff-FED-Campus-Assignments/css-frameworks-baldr)
+- [Design](https://www.figma.com/file/GSiBv4SyUrqXmp8xGbVaoj/Tailwind-CA-Prototype?type=design&node-id=0-1&mode=design&t=3FNvblN4XIx1LIeQ-0)
+- [Production deploy](https://jolly-sable-e9ee31.netlify.app/)
+- [Deployment CI](https://app.netlify.com/sites/jolly-sable-e9ee31/overview)
+- [Kanban] https://www.figma.com/file/BcQt2ZWN1efkMRfyXdg1N7/Untitled?type=whiteboard&node-id=0%3A1&t=tPflLdPuSpdSpKP0-1
 
 ## Deployment
 
@@ -116,5 +117,5 @@ Make sure you go through this checklist before submitting your project to Moodle
 
 ## Authors
 
-- _YOURE_NAME_ (@_your_github_username_)
+- Haakon, Julia, Bilal (@juliakalvik, @Haakonjohansenn, @Bilal0410)
 - Monde Sineke (@S3ak)
