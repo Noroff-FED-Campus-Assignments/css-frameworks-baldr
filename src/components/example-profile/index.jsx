@@ -3,10 +3,11 @@ import { useUsersPosts } from "../../lib/my-api";
 import ExampleUsersPosts from '../../components/example-users-posts';
 
 function ProfilePage() {
-  const userId = 2; // Replace with the appropriate user ID
+  const userId = 2;
   const { status, error, data: fetchedPosts } = useUsersPosts(userId);
   const isLoading = status === "loading";
   const [posts, setPosts] = useState([]);
+  const [newPostContent, setNewPostContent] = useState("");
 
   useEffect(() => {
     if (fetchedPosts) {
@@ -23,7 +24,7 @@ function ProfilePage() {
     email: "johndoe@example.com",
   };
 
-  // Example user data (replace with actual user data)
+
   const exampleUserData = {
     name: "John Doe",
     email: "johndoe@example.com",
@@ -46,8 +47,18 @@ function ProfilePage() {
         date: "September 1, 2023",
         content: "This is a sample post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       },
-      // Add more posts as needed
     ],
+  };
+
+
+  const handlePostContentChange = (e) => {
+    setNewPostContent(e.target.value);
+  };
+
+
+  const handleSubmitPost = () => {
+    console.log("Post submitted:", newPostContent);
+    setNewPostContent("");
   };
 
   return (
@@ -65,7 +76,7 @@ function ProfilePage() {
           <p>Email: {userProfile.email}</p>
         </div>
       </div>
-      <div className="flex flex-wrap min-w-[300px]"> {/* Apply min-width here */}
+      <div className="flex flex-wrap min-w-[300px]">
         <div className="flex-1 pr-4">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Recent Posts</h2>
           <div className="max-h-72 sm:max-w-md overflow-y-auto mt-4">
@@ -99,8 +110,29 @@ function ProfilePage() {
           </div>
         </div>
       </div>
+
+      <div className="bg-white shadow-md rounded-lg p-4 mb-4">
+        <h2 className="text-lg font-semibold mb-2">Post to Wall</h2>
+        <textarea
+          className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200"
+          rows="4"
+          placeholder="What's on your mind?"
+          value={newPostContent}
+          onChange={handlePostContentChange}
+        ></textarea>
+        <div className="flex items-center justify-between mt-4">
+          <button
+            className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200"
+            onClick={handleSubmitPost}
+          >
+            Post
+          </button>
+          <span className="text-gray-500 text-sm">Max 280 characters</span>
+        </div>
+      </div>
     </div>
   );
 }
 
 export default ProfilePage;
+
