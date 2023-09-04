@@ -13,7 +13,7 @@ This project was bootstrapped with Vite.
 <!-- You must replace these links -->
 
 - [Brief](https://github.com/Noroff-FED-Campus-Assignments/css-frameworks-baldr)
-- [Design](https://www.figma.com/file/GSiBv4SyUrqXmp8xGbVaoj/Tailwind-CA-Prototype?type=design&node-id=0-1&mode=design&t=3FNvblN4XIx1LIeQ-0)
+- [Design](https://www.figma.com/file/GSiBv4SyUrqXmp8xGbVaoj/Tailwind-CA-Prototype?type=design&node-id=0%3A1&mode=design&t=IX0vNhAgf3l9GphV-1)
 - [Production deploy](https://jolly-sable-e9ee31.netlify.app/)
 - [Deployment CI](https://app.netlify.com/sites/jolly-sable-e9ee31/overview)
 - [Kanban] https://www.figma.com/file/BcQt2ZWN1efkMRfyXdg1N7/Untitled?type=whiteboard&node-id=0%3A1&t=tPflLdPuSpdSpKP0-1
