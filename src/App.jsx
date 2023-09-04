@@ -6,7 +6,7 @@ function App() {
     <>
       <header>
         <nav>
-          <ul>
+          <ul id="#nav-bar">
             <li>
               <Link to="/">Home</Link>
             </li>
