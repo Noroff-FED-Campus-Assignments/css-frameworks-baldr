@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -16,11 +20,11 @@ ul li:hover {
   font-size: 110%;
 }
 
-ul {
+nav ul {
   display: flex;
   flex-direction: row;
   gap: 3rem;
-  padding-top: 20px;
+  padding-top: 10px;
   color: #fff;
 }
 
