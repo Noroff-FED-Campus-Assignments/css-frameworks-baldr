@@ -25,7 +25,7 @@ function App() {
       </main>
 
       <footer>
-        <small>Created with ❤️ by _REPLACE_</small>
+        <small>Created with ❤️ by Julia, Bilal, Haakon, Mo</small>
       </footer>
     </>
   );
