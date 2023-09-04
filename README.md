@@ -26,7 +26,24 @@ YOu can update your deployment pipeling by editing the [vercel.json](https://ver
 
 ## Report
 
-_ADD_YOUR_REPORT_HERE_
+Tailwind + React C.A
+Introduction
+
+This group project was completed as a course assignment in school. The task was to create three HTML pages using a CSS framework with React: a home page, profile page, and login page.
+
+Design Choices
+
+We started by exploring different Tailwind components and then used Figma to design a high fidelity prototype. To keep things fun and playful, we decided to make a social media platform for dogs. We used bright colors in the background of each dog's profile photo, the navbar, and buttons. We kept the default font from the Tailwind components because it is neat and easy on the eyes.
+
+The homepage displays a feed of posts from the user's contacts, a form to create a new post, and a search bar. The profile page features the user's profile picture, details, a list of their contacts (with indicators for whether they are currently active or inactive), the contact's posts, and a form to post to the wall. The login page contains a login form and a welcoming text and photo section.
+
+Technical
+
+Our group chose to work with the Tailwind CSS framework in React. We encountered some difficulties with pushing and pulling between branches since this was our first time working collaboratively on a project. As a result, we learned a lot about branches, GitHub, and error handling.
+
+Team Effort
+
+Despite a busy week with a lot of work and illness, we all worked well together and finished the project successfully. Each team member contributed equally, working on all of the branches.
 
 ## Getting Started
 
