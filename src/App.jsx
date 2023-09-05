@@ -6,7 +6,7 @@ function App() {
     <>
       <header>
         <nav>
-          <ul>
+          <ul id="#nav-bar">
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -25,7 +25,7 @@ function App() {
       </main>
 
       <footer>
-        <small>Created with ❤️ by _REPLACE_</small>
+        <small>Created with ❤️ by Julia, Bilal, Haakon, Mo</small>
       </footer>
     </>
   );
