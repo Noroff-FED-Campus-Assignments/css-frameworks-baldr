@@ -15,6 +15,9 @@ function ProfilePage() {
     }
   }, [fetchedPosts]);
 
+  /**
+   * @returns array of users 
+   * */
   const userProfile = {
     id: 1,
     profileImage: "/dog1.jpg",
